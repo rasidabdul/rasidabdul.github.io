@@ -1,0 +1,13 @@
+title: rasidabdul.github.io
+description: Personal GitHub Pages site for Abdul Rasid.
+baseurl: ""
+url: "https://rasidabdul.github.io"
+markdown: kramdown
+plugins: []
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/

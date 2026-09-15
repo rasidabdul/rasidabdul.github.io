@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | rasidabdul.github.io</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">rasidabdul.github.io</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header container">
+      <h1>About this site</h1>
+      <p class="lede">Why this repository exists and how it's put together.</p>
+    </section>
+
+    <section class="container prose">
+      <p>
+        This repository, <strong>rasidabdul.github.io</strong>, is a personal GitHub Pages site for
+        Abdul Rasid. It contains no build step, no framework, and no external dependencies &mdash; just
+        static HTML and CSS served directly from the <code>main</code> branch.
+      </p>
+
+      <h2>What's included</h2>
+      <ul>
+        <li>A responsive biography landing page (<code>index.html</code>)</li>
+        <li>Supporting content pages (<code>about.html</code>, <code>contact.html</code>)</li>
+        <li>A shared stylesheet (<code>css/styles.css</code>) with a mobile-first responsive layout</li>
+        <li>Baseline repository configuration (<code>README.md</code>, <code>_config.yml</code>, <code>.gitignore</code>)</li>
+      </ul>
+
+      <h2>Design goals</h2>
+      <p>
+        Keep it simple, keep it fast, and keep it easy to extend. Anyone can add a new page in minutes
+        by copying the header/footer markup and linking it from the navigation bar.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abdul Rasid &middot; Published with GitHub Pages</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

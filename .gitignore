@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+
+# Local static-site tooling
+_site/
+.sass-cache/
+.jekyll-cache/
+.bundle/
+vendor/
+node_modules/
