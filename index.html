@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Abdul Rasid</a>
+      <nav class="nav">
+        <a href="about.html">Know More</a>
+        <a href="contact.html">ContactMe</a>
+        <a href="https://github.com/rasidabdul" target="_blank" rel="noopener noreferrer">My Github Repositories <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
   <main class="page-shell">
     <section class="hero" aria-labelledby="name">
       <div class="hero-inner">
@@ -91,5 +102,12 @@
     </section>
 
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abdul Rasid &middot; Published with GitHub Pages</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
