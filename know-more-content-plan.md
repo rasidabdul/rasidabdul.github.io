@@ -32,7 +32,7 @@ The "Know More" nav link points to `about.html`, which currently describes the s
 - File: `about.html` lines 22–31 (current `<section class="page-header container">` and first `<section class="container prose">` paragraph)
 - Reuse existing classes: `page-header`, `container`, `prose`, `lede`
 
-**Status:** `[x] done`
+**Status:** `[ ] pending`
 
 ---
 
@@ -45,26 +45,44 @@ The "Know More" nav link points to `about.html`, which currently describes the s
 - The 8 items are rendered as a `<ul class="tag-list">` (same pattern as the expertise tags on the homepage)
 
 **Todo List:**
-1. Add a `<section class="container prose">` block (reuses prose layout for alignment)
+1. Add a `<section>` block with `class="expertise"` (reuses homepage tag-list styling)
 2. Add `<p class="section-label">Leadership</p>` and `<h2>Leadership Highlights</h2>`
-3. Render 8 items as `<li>` inside `<ul class="tag-list">`
+3. Render these 8 items as `<li>` inside `<ul class="tag-list">`:
+   - Executive client engagement and strategic advisory
+   - Enterprise architecture and digital transformation leadership
+   - Delivery and execution of complex, mission-critical programs
+   - Technology strategy, innovation, and modernization
+   - Leadership of global multidisciplinary teams of 100+ professionals
+   - Business development, revenue growth, and opportunity creation
+   - Risk management, governance, and operational excellence
+   - Cross-functional stakeholder alignment and executive communication
 
 **Relevant Context:**
+- File: `index.html` lines 50–71 — the `.expertise` / `.tag-list` pattern to mirror
 - File: `about.html` — insert after the intro prose section
-- Reuse existing classes: `container`, `prose`, `section-label`, `tag-list`
+- Reuse existing classes: `expertise`, `section-label`, `tag-list`
 
-**Status:** `[x] done`
+**Status:** `[ ] pending`
 
 ---
 
 ### Sub-Task 3 — Add closing pull-quote / callout
 
-**Intent:** Display the closing recognition statement as a styled pull-quote callout block.
+**Intent:** Display the closing recognition statement as a styled pull-quote callout block, distinguishing it visually from regular prose.
 
 **Expected Outcomes:**
 - A `<blockquote>` element appears after the Leadership Highlights section
+- Text: *"Recognized for bridging business strategy and technology execution, building high-performing teams, strengthening client partnerships, and delivering transformative solutions that accelerate growth and competitive advantage."*
 
-**Status:** `[x] done`
+**Todo List:**
+1. Add a `<blockquote class="prose container">` (or a `<p>` with a pull-quote treatment inside the existing prose section) after the tag-list section
+2. Use the existing `prose` and `container` classes — no new CSS needed
+
+**Relevant Context:**
+- File: `about.html` — insert after Sub-Task 2 section
+- No new CSS classes required; `blockquote` is a standard HTML element already styled by the browser and any existing reset rules in `css/styles.css`
+
+**Status:** `[ ] pending`
 
 ---
 
@@ -72,7 +90,24 @@ The "Know More" nav link points to `about.html`, which currently describes the s
 
 **Intent:** List all five certifications from the LinkedIn profile.
 
-**Status:** `[x] done`
+**Expected Outcomes:**
+- A new `<section>` labelled "Certifications" appears with all five certifications listed
+
+**Todo List:**
+1. Add a `<section class="container prose">` with `<p class="section-label">Certifications</p>` and `<h2>Licences & Certifications</h2>`
+2. Render the following as a `<ul>`:
+   - Claude Certified Architect — Foundations
+   - AWS Certified Cloud Practitioner
+   - The Python Bible™ | Everything You Need to Program in Python
+   - watsonx.ai Generative AI Tools Technical Sales Intermediate
+   - Introduction to Model Context Protocol
+
+**Relevant Context:**
+- Source: LinkedIn PDF lines 13–22
+- File: `about.html` — insert after Sub-Task 3 block
+- Reuse existing classes: `container`, `prose`, `section-label`
+
+**Status:** `[ ] pending`
 
 ---
 
@@ -80,12 +115,35 @@ The "Know More" nav link points to `about.html`, which currently describes the s
 
 **Intent:** Add the education entry from the LinkedIn profile.
 
-**Status:** `[x] done`
+**Expected Outcomes:**
+- A new `<section>` labelled "Education" appears with the degree entry
+
+**Todo List:**
+1. Add a `<section class="container prose">` with `<p class="section-label">Education</p>` and `<h2>Academic Background</h2>`
+2. Add the single entry: *Bachelor of Engineering, Information Technology — Jadavpur University, Kolkata (2001–2005)*
+
+**Relevant Context:**
+- Source: LinkedIn PDF lines 75–78
+- File: `about.html` — insert after Sub-Task 4 block
+- Reuse existing classes: `container`, `prose`, `section-label`
+
+**Status:** `[ ] pending`
 
 ---
 
-### Sub-Task 6 — Update page title and meta description
+### Sub-Task 6 — Update page `<title>` and `<meta>` description
 
 **Intent:** Align the browser tab title and meta description with the new professional content.
 
-**Status:** `[x] done`
+**Expected Outcomes:**
+- `<title>` changes from `"About | rasidabdul.github.io"` to `"About Abdul Rasid | IBM Consulting Associate Partner"`
+- `<meta name="description">` is added or updated to reflect the professional summary
+
+**Todo List:**
+1. Update `<title>` in `about.html` `<head>`
+2. Add `<meta name="description" content="Professional profile of Abdul Rasid, Associate Partner — Solutions Architecture & Delivery, IBM Consulting Financial Services.">`
+
+**Relevant Context:**
+- File: `about.html` lines 1–8 (`<head>` block)
+
+**Status:** `[ ] pending`
